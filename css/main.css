@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*           Nav           */
+nav {
+    background-color: #343a40;
+    color: white;
+    height: 56px;
+}
+
+nav h1 {
+    height: 56px;
+    padding: 15px;
+}
+
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.brand {
+    float: left;
+    /* font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 15px; */
+}
+
+.burger-menu {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.menu {
+    float: right;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    height: 56px;
+    padding: 20px 10px;
+}
+
+menu a {
+    color: #CCC;
+    text-decoration: none;
+}
+
+menu a:hover {
+    color: #fff;
+}
+
+.container-full {
+    width: 100%;
+}
+
+.container-full .row {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*           Header           */ 
+header {
+    background-image: url("../assets/images/header.jpg");
+    background-size: cover;
+    color: white;
+    /* Centrar la imagen */
+    /* background-position: center;*/
+    text-align: center;
+    padding: 10em 0em;
+}
+
+.opaque {
+    opacity: 0.7;
+}
+
+
+/*           Headers           */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 48px;
+}
+
+header h2 {
+    font-weight: 100;
+    font-size: 32px;
+}
+
+/*           Sections           */
+section h2 {
+    font-weight: 100;
+    font-size: 56px;
+}
+
+section img {
+    border-radius: 50%;
+    /*max-width: 100%; */
+}
+
+/*           Footer           */
+footer {
+    background-color: #343a40;
+    color: white;
+    height: 56px;
+    text-align: center;
+    padding: 1em;
+}
+
+/** Primer Breakpoint de bootstrap **/
+
+@media all and (max-width:576px) {
+    [class *='col-'] {
+       width: 100%;
+    }
+    /* Se esconde el menu hamburguesa */
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media all and (min-width:576px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
